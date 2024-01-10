@@ -29,7 +29,7 @@ result_btn.addEventListener("click", function(){
     console.log(typeof(height.value,weight.value,goals.value)) // string 확인
     let goals_result = Number((height.value-100)* 0.9); // 변수 생성 적정체중  string - > number 변환.
     goals.value = goals_result // 최종 목표에 적정체중 보이게.
-    
+    console.log(typeof(goals_result))// number 확인  
     window.alert(`적정 체중은 ${goals_result}kg 이며 ${(goals_result)-(weight.value)}kg 감량해야합니다.`)
 })
 console.log("--------------------------result_btn 함수 끝.---------------------------------------------")
